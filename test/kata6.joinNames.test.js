@@ -6,5 +6,6 @@ describe("joinNames", () => {
     expect(joinNames(["Bart", "Lisa", "Maggie"])).toBe('Bart, Lisa & Maggie');
     expect(joinNames(["Bart", "Lisa", "Maggie", "Bart"])).toBe('Bart, Lisa, Maggie & Bart');
     expect(joinNames(["Bart", "Lisa", "Maggie", "Bart", "Maggie"])).toBe('Bart, Lisa, Maggie, Bart & Maggie');
+    expect(joinNames(["Bart", "Lisa", "Maggie", "Bart", "Toby", "Toby"])).toBe('Bart, Lisa, Maggie, Bart, Toby & Toby');
 });
 });
